@@ -1,5 +1,7 @@
 package products.carvaan.details;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -24,9 +26,10 @@ public class CarvaanHindi {
 		color = "Porcelain White";
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
-		String productId =  productIdContainer.getAttribute("id");
-		WriteLine("Product Id", productId);
-		
+		String actualProductId =  productIdContainer.getAttribute("id");
+		String expectedProductId =  "53";
+		//WriteLine("Product Id: ", actualProductId);
+		assertEquals(actualProductId, expectedProductId);
 	}
 
 	@Test
@@ -34,9 +37,10 @@ public class CarvaanHindi {
 		color = "Porcelain White";
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
-		String dataImage =  anchorContainer.getAttribute("data-image");
-		WriteLine("Data Image", dataImage);
-		
+		String actualDataImage =  anchorContainer.getAttribute("data-image");
+		String expectedDataImage =  "https://s.saregama.com/image/s/fh_120/2/6e/c8/carvaanframe_10_1672652416.png";
+		//WriteLine("Data Image: ", actualDataImage);
+		assertEquals(actualDataImage, expectedDataImage);
 	}
 
 	@Test
@@ -44,12 +48,31 @@ public class CarvaanHindi {
 		color = "Porcelain White";
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
-		String dataZoomImage =  anchorContainer.getAttribute("data-zoom-image");
-		WriteLine("Data Zoom Image", dataZoomImage);
-		
+		String actualZoomDataImage =  anchorContainer.getAttribute("data-zoom-image");
+		String expectedZoomDataImage =  "https://s.saregama.com/image/s/fh_1000/2/6e/c8/carvaanframe_10_1672652416.png";
+		//WriteLine("Data Zoom Image: ", actualZoomDataImage);
+		assertEquals(actualZoomDataImage, expectedZoomDataImage);
 	}
 
-	
+	@Test
+	public void TestNotifyForPorcelainWhite() {
+		color = "Porcelain White";
+		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
+		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
+		String actualProductId =  productIdContainer.getAttribute("id");
+		String notifyButtonId = actualProductId + "Notify";
+		boolean actualNotifyButtonPresent=false;
+		try {
+			WebElement notifyButtonContainer = colorSelectorContainer.findElement(By.xpath("//button[@id=\""+notifyButtonId+"\"]"));
+			actualNotifyButtonPresent=true;
+		}
+		catch(Exception ex) {
+			actualNotifyButtonPresent=false;
+		}
+		boolean expectedNotifyButtonPresent = false;
+		WriteLine("Notify Me Present: ", (actualNotifyButtonPresent?"True":"False"));
+		assertEquals(actualNotifyButtonPresent, expectedNotifyButtonPresent);
+	}
 
 	@BeforeTest
 	public void beforeTest() {
@@ -70,7 +93,11 @@ public class CarvaanHindi {
 
 		//ReadDetailsFromThePage();
 
-		WebElement closepopup = driver.findElement(By.xpath("/html/body/div[11]/div/div/button"));
+		WebElement closepopup=null;
+		try {
+			closepopup = driver.findElement(By.xpath("/html/body/div[11]/div/div/button"));
+		}
+		catch(Exception ex) {}
 
 		if (closepopup != null)
 			closepopup.click();
