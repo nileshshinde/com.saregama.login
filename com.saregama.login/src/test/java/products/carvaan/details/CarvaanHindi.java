@@ -70,7 +70,7 @@ public class CarvaanHindi {
 			actualNotifyButtonPresent=false;
 		}
 		boolean expectedNotifyButtonPresent = false;
-		WriteLine("Notify Me Present: ", (actualNotifyButtonPresent?"True":"False"));
+		//WriteLine("Notify Me Present: ", (actualNotifyButtonPresent?"True":"False"));
 		assertEquals(actualNotifyButtonPresent, expectedNotifyButtonPresent);
 	}
 
