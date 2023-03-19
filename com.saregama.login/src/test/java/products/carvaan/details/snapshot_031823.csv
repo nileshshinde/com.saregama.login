@@ -1,8 +1,8 @@
-Product,Color,MRP,MOP,Notify,ID,Image,ZoomImage
-Hindi,Porcelain White,6490,6290,FALSE,53,https://s.saregama.com/image/s/fh_120/2/6e/c8/carvaanframe_10_1672652416.png,https://s.saregama.com/image/s/fh_1000/2/6e/c8/carvaanframe_10_1672652416.png
-Hindi,Walnut Brown,6390,-1,TRUE,52,https://s.saregama.com/image/s/fh_120/5/19/cd/carvaanframe_10_1672652376.png,https://s.saregama.com/image/s/fh_1000/5/19/cd/carvaanframe_10_1672652376.png
-Hindi,Electric Blue,6390,-1,TRUE,54,https://s.saregama.com/image/s/fh_120/3/16/9a/carvaanframe_10_1672652446.png,https://s.saregama.com/image/s/fh_1000/3/16/9a/carvaanframe_10_1672652446.png
-Hindi,Camouflage Green,6490,-1,TRUE,177,https://s.saregama.com/image/s/fh_120/e/41/b7/carvaanframe_10_1672652632.png,https://s.saregama.com/image/s/fh_1000/e/41/b7/carvaanframe_10_1672652632.png
-Hindi,Cherrywood Red,6990,6790,FALSE,73,https://s.saregama.com/image/s/fh_120/d/b8/57/carvaanframe_10_1672652594.png,https://s.saregama.com/image/s/fh_1000/d/b8/57/carvaanframe_10_1672652594.png
-Hindi,Oakwood Brown,6990,6790,FALSE,60,https://s.saregama.com/image/s/fh_120/a/2e/4c/carvaanframe_10_1672652475.png,https://s.saregama.com/image/s/fh_1000/a/2e/4c/carvaanframe_10_1672652475.png
-Hindi,Charcoal Grey,6390,-1,TRUE,61,https://s.saregama.com/image/s/fh_120/4/df/e4/carvaanframe_10_1672652502.png,https://s.saregama.com/image/s/fh_1000/4/df/e4/carvaanframe_10_1672652502.png
+Product,Title,Color,MRP,MOP,Notify,ID,Image,ZoomImage
+Hindi,"Carvaan Hindi - Porcelain White","Porcelain White",6490,6290,FALSE,53,https://s.saregama.com/image/s/fh_120/2/6e/c8/carvaanframe_10_1672652416.png,https://s.saregama.com/image/s/fh_1000/2/6e/c8/carvaanframe_10_1672652416.png
+Hindi,"Carvaan Hindi - Walnut Brown","Walnut Brown",6390,-1,TRUE,52,https://s.saregama.com/image/s/fh_120/5/19/cd/carvaanframe_10_1672652376.png,https://s.saregama.com/image/s/fh_1000/5/19/cd/carvaanframe_10_1672652376.png
+Hindi,"Carvaan Hindi - Electric Blue","Electric Blue",6390,-1,TRUE,54,https://s.saregama.com/image/s/fh_120/3/16/9a/carvaanframe_10_1672652446.png,https://s.saregama.com/image/s/fh_1000/3/16/9a/carvaanframe_10_1672652446.png
+Hindi,"Carvaan Hindi - Camouflage Green","Camouflage Green",6490,-1,TRUE,177,https://s.saregama.com/image/s/fh_120/e/41/b7/carvaanframe_10_1672652632.png,https://s.saregama.com/image/s/fh_1000/e/41/b7/carvaanframe_10_1672652632.png
+Hindi,"Carvaan Hindi - Cherrywood Red","Cherrywood Red",6990,6790,FALSE,73,https://s.saregama.com/image/s/fh_120/d/b8/57/carvaanframe_10_1672652594.png,https://s.saregama.com/image/s/fh_1000/d/b8/57/carvaanframe_10_1672652594.png
+Hindi,"Carvaan Hindi - Oakwood Brown","Oakwood Brown",6990,6790,FALSE,60,https://s.saregama.com/image/s/fh_120/a/2e/4c/carvaanframe_10_1672652475.png,https://s.saregama.com/image/s/fh_1000/a/2e/4c/carvaanframe_10_1672652475.png
+Hindi,"Carvaan Hindi - Charcoal Grey","Charcoal Grey",6390,-1,TRUE,61,https://s.saregama.com/image/s/fh_120/4/df/e4/carvaanframe_10_1672652502.png,https://s.saregama.com/image/s/fh_1000/4/df/e4/carvaanframe_10_1672652502.png

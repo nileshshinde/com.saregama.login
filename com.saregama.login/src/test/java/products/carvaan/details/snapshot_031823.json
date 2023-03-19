@@ -1,72 +1,82 @@
-[
 {
-	"Product": "Hindi",
-	"Color": "Porcelain White",
-	"MRP": "6490",
-	"MOP": "6290",
-	"Notify": false,
-	"ID": "53",
-	"Image": "https://s.saregama.com/image/s/fh_120/2/6e/c8/carvaanframe_10_1672652416.png",
-	"ZoomImage": "https://s.saregama.com/image/s/fh_1000/2/6e/c8/carvaanframe_10_1672652416.png"
-},
-{
-	"Product": "Hindi",
-	"Color": "Walnut Brown",
-	"MRP": "6390",
-	"MOP": "-1",
-	"Notify": true,
-	"ID": "52",
-	"Image": "https://s.saregama.com/image/s/fh_120/5/19/cd/carvaanframe_10_1672652376.png",
-	"ZoomImage": "https://s.saregama.com/image/s/fh_1000/5/19/cd/carvaanframe_10_1672652376.png"
-},
-{
-	"Product": "Hindi",
-	"Color": "Electric Blue",
-	"MRP": "6390",
-	"MOP": "-1",
-	"Notify": true,
-	"ID": "54",
-	"Image": "https://s.saregama.com/image/s/fh_120/3/16/9a/carvaanframe_10_1672652446.png",
-	"ZoomImage": "https://s.saregama.com/image/s/fh_1000/3/16/9a/carvaanframe_10_1672652446.png"
-},
-{
-	"Product": "Hindi",
-	"Color": "Camouflage Green",
-	"MRP": "6490",
-	"MOP": "-1",
-	"Notify": true,
-	"ID": "177",
-	"Image": "https://s.saregama.com/image/s/fh_120/e/41/b7/carvaanframe_10_1672652632.png",
-	"ZoomImage": "https://s.saregama.com/image/s/fh_1000/e/41/b7/carvaanframe_10_1672652632.png"
-},
-{
-	"Product": "Hindi",
-	"Color": "Cherrywood Red",
-	"MRP": "6990",
-	"MOP": "6790",
-	"Notify": false,
-	"ID": "73",
-	"Image": "https://s.saregama.com/image/s/fh_120/d/b8/57/carvaanframe_10_1672652594.png",
-	"ZoomImage": "https://s.saregama.com/image/s/fh_1000/d/b8/57/carvaanframe_10_1672652594.png"
-},
-{
-	"Product": "Hindi",
-	"Color": "Oakwood Brown",
-	"MRP": "6990",
-	"MOP": "6790",
-	"Notify": false,
-	"ID": "60",
-	"Image": "https://s.saregama.com/image/s/fh_120/a/2e/4c/carvaanframe_10_1672652475.png",
-	"ZoomImage": "https://s.saregama.com/image/s/fh_1000/a/2e/4c/carvaanframe_10_1672652475.png"
-},
-{
-	"Product": "Hindi",
-	"Color": "Charcoal Grey",
-	"MRP": "6390",
-	"MOP": "-1",
-	"Notify": true,
-	"ID": "61",
-	"Image": "https://s.saregama.com/image/s/fh_120/4/df/e4/carvaanframe_10_1672652502.png",
-	"ZoomImage": "https://s.saregama.com/image/s/fh_1000/4/df/e4/carvaanframe_10_1672652502.png"
+	"products": 
+	[
+		{
+			"Product": "Hindi",
+			"Title": "Carvaan Hindi - Porcelain White",
+			"Color": "Porcelain White",
+			"MRP": "6490",
+			"MOP": "6290",
+			"Notify": false,
+			"ID": "53",
+			"Image": "https://s.saregama.com/image/s/fh_120/2/6e/c8/carvaanframe_10_1672652416.png",
+			"ZoomImage": "https://s.saregama.com/image/s/fh_1000/2/6e/c8/carvaanframe_10_1672652416.png"
+		},
+		{
+			"Product": "Hindi",
+			"Title": "Carvaan Hindi - Walnut Brown",
+			"Color": "Walnut Brown",
+			"MRP": "6390",
+			"MOP": "-1",
+			"Notify": true,
+			"ID": "52",
+			"Image": "https://s.saregama.com/image/s/fh_120/5/19/cd/carvaanframe_10_1672652376.png",
+			"ZoomImage": "https://s.saregama.com/image/s/fh_1000/5/19/cd/carvaanframe_10_1672652376.png"
+		},
+		{
+			"Product": "Hindi",
+			"Title": "Carvaan Hindi - Electric Blue",
+			"Color": "Electric Blue",
+			"MRP": "6390",
+			"MOP": "-1",
+			"Notify": true,
+			"ID": "54",
+			"Image": "https://s.saregama.com/image/s/fh_120/3/16/9a/carvaanframe_10_1672652446.png",
+			"ZoomImage": "https://s.saregama.com/image/s/fh_1000/3/16/9a/carvaanframe_10_1672652446.png"
+		},
+		{
+			"Product": "Hindi",
+			"Title": "Carvaan Hindi - Camouflage Green",
+			"Color": "Camouflage Green",
+			"MRP": "6490",
+			"MOP": "-1",
+			"Notify": true,
+			"ID": "177",
+			"Image": "https://s.saregama.com/image/s/fh_120/e/41/b7/carvaanframe_10_1672652632.png",
+			"ZoomImage": "https://s.saregama.com/image/s/fh_1000/e/41/b7/carvaanframe_10_1672652632.png"
+		},
+		{
+			"Product": "Hindi",
+			"Title": "Carvaan Hindi - Cherrywood Red",
+			"Color": "Cherrywood Red",
+			"MRP": "6990",
+			"MOP": "6790",
+			"Notify": false,
+			"ID": "73",
+			"Image": "https://s.saregama.com/image/s/fh_120/d/b8/57/carvaanframe_10_1672652594.png",
+			"ZoomImage": "https://s.saregama.com/image/s/fh_1000/d/b8/57/carvaanframe_10_1672652594.png"
+		},
+		{
+			"Product": "Hindi",
+			"Title": "Carvaan Hindi - Oakwood Brown",
+			"Color": "Oakwood Brown",
+			"MRP": "6990",
+			"MOP": "6790",
+			"Notify": false,
+			"ID": "60",
+			"Image": "https://s.saregama.com/image/s/fh_120/a/2e/4c/carvaanframe_10_1672652475.png",
+			"ZoomImage": "https://s.saregama.com/image/s/fh_1000/a/2e/4c/carvaanframe_10_1672652475.png"
+		},
+		{
+			"Product": "Hindi",
+			"Title": "Carvaan Hindi - Charcoal Grey",
+			"Color": "Charcoal Grey",
+			"MRP": "6390",
+			"MOP": "-1",
+			"Notify": true,
+			"ID": "61",
+			"Image": "https://s.saregama.com/image/s/fh_120/4/df/e4/carvaanframe_10_1672652502.png",
+			"ZoomImage": "https://s.saregama.com/image/s/fh_1000/4/df/e4/carvaanframe_10_1672652502.png"
+		}
+	]
 }
-]

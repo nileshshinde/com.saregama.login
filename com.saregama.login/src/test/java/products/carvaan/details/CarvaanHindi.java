@@ -18,16 +18,17 @@ import org.testng.annotations.AfterTest;
 public class CarvaanHindi {
 
 	private WebDriver driver;
-
 	private String color;
+	CarvaanExpectedValues CEV = new CarvaanExpectedValues();
 
 	@Test
 	public void TestProductIDForPorcelainWhite() {
 		color = "Porcelain White";
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
-		String expectedProductId = "53";
+		String expectedProductId = record.getID();
 		// WriteLine("Product Id: ", actualProductId);
 		assertEquals(actualProductId, expectedProductId);
 	}
@@ -35,10 +36,11 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataImageForPorcelainWhite() {
 		color = "Porcelain White";
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualDataImage = anchorContainer.getAttribute("data-image");
-		String expectedDataImage = "https://s.saregama.com/image/s/fh_120/2/6e/c8/carvaanframe_10_1672652416.png";
+		String expectedDataImage = record.getImage();
 		// WriteLine("Data Image: ", actualDataImage);
 		assertEquals(actualDataImage, expectedDataImage);
 	}
@@ -46,10 +48,11 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataZoomImageForPorcelainWhite() {
 		color = "Porcelain White";
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualZoomDataImage = anchorContainer.getAttribute("data-zoom-image");
-		String expectedZoomDataImage = "https://s.saregama.com/image/s/fh_1000/2/6e/c8/carvaanframe_10_1672652416.png";
+		String expectedZoomDataImage = record.getZoomImage();
 		// WriteLine("Data Zoom Image: ", actualZoomDataImage);
 		assertEquals(actualZoomDataImage, expectedZoomDataImage);
 	}
@@ -57,6 +60,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestNotifyForPorcelainWhite() {
 		color = "Porcelain White";
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -69,7 +73,7 @@ public class CarvaanHindi {
 		} catch (Exception ex) {
 			actualNotifyButtonPresent = false;
 		}
-		boolean expectedNotifyButtonPresent = false;
+		boolean expectedNotifyButtonPresent = record.getNotify();
 		// WriteLine("Notify Me Present: ", (actualNotifyButtonPresent?"True":"False"));
 		assertEquals(actualNotifyButtonPresent, expectedNotifyButtonPresent);
 	}
@@ -77,6 +81,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestTitleForPorcelainWhite() {
 		color = "Porcelain White";
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -88,7 +93,7 @@ public class CarvaanHindi {
 			actualTitle = "";
 		}
 
-		String expectedTitle = "Carvaan Hindi - Porcelain White";
+		String expectedTitle = record.getTitle();
 		// WriteLine("Product Title: ", actualTitle);
 		assertEquals(actualTitle, expectedTitle);
 	}
@@ -96,6 +101,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMRPForPorcelainWhite() {
 		color = "Porcelain White";
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -131,14 +137,15 @@ public class CarvaanHindi {
 			}
 		}
 		
-		String expectedMrp =  "6490";
-		WriteLine("Product MRP: ", actualMrp);
+		String expectedMrp =  record.getMRP();
+		//WriteLine("Product MRP: ", actualMrp);
 		assertEquals(actualMrp, expectedMrp);
 	}
 
 	@Test
 	public void TestMOPForPorcelainWhite() {
 		color = "Porcelain White";
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -167,8 +174,8 @@ public class CarvaanHindi {
 			actualMop = "not applicable";
 		}
 		
-		String expectedMop = (offerpriceavailable)?"6290":"not applicable";
-		WriteLine("Product MOP: ", actualMop);
+		String expectedMop = (offerpriceavailable)?record.getMOP():"not applicable";
+		//WriteLine("Product MOP: ", actualMop);
 		
 		if (offerpriceavailable)
 			assertEquals(actualMop, expectedMop);
