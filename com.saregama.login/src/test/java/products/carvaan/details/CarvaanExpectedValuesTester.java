@@ -1,6 +1,8 @@
 package products.carvaan.details;
 
 public class CarvaanExpectedValuesTester {
+	
+	private static String ProductName = "Hindi"; 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -13,16 +15,16 @@ public class CarvaanExpectedValuesTester {
 	public static void printProductDetails(String ProductColor) {
 		CarvaanExpectedValues CEV = new CarvaanExpectedValues();
 		
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductColor);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, ProductColor);
 		
-		String Color = CEV.getProdutColorByColor(ProductColor);
-		String Title = CEV.getProdutTitleByColor(ProductColor);
-		String MRP = CEV.getProdutMRPByColor(ProductColor);
-		String MOP = CEV.getProdutMOPByColor(ProductColor);
-		boolean Notify = CEV.getProdutNotifyByColor(ProductColor);
-		String ID = CEV.getProdutIDByColor(ProductColor);
-		String Image = CEV.getProdutImageByColor(ProductColor);
-		String ZoomImage = CEV.getProdutZoomImageByColor(ProductColor);
+		String Color = CEV.getProductColorByColor(ProductName, ProductColor);
+		String Title = CEV.getProductTitleByColor(ProductName, ProductColor);
+		String MRP = CEV.getProductMRPByColor(ProductName, ProductColor);
+		String MOP = CEV.getProductMOPByColor(ProductName, ProductColor);
+		boolean Notify = CEV.getProductNotifyByColor(ProductName, ProductColor);
+		String ID = CEV.getProductIDByColor(ProductName, ProductColor);
+		String Image = CEV.getProductImageByColor(ProductName, ProductColor);
+		String ZoomImage = CEV.getProductZoomImageByColor(ProductName, ProductColor);
 		
 		System.out.println("--------------------------Carvaan: " + ProductColor + ", Using Variable--------------------------");
 		System.out.println("Title: " + Title);

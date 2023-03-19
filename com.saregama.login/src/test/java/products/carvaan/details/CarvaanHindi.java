@@ -18,6 +18,7 @@ import org.testng.annotations.AfterTest;
 public class CarvaanHindi {
 
 	private WebDriver driver;
+	private String ProductName = "Hindi";
 	private String color;
 	CarvaanExpectedValues CEV = new CarvaanExpectedValues();
 
@@ -29,7 +30,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestProductIDForPorcelainWhite() {
 		color = "Porcelain White";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -41,7 +42,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataImageForPorcelainWhite() {
 		color = "Porcelain White";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualDataImage = anchorContainer.getAttribute("data-image");
@@ -53,7 +54,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataZoomImageForPorcelainWhite() {
 		color = "Porcelain White";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualZoomDataImage = anchorContainer.getAttribute("data-zoom-image");
@@ -65,7 +66,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestNotifyForPorcelainWhite() {
 		color = "Porcelain White";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -86,7 +87,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestTitleForPorcelainWhite() {
 		color = "Porcelain White";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -106,7 +107,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMRPForPorcelainWhite() {
 		color = "Porcelain White";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -150,7 +151,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMOPForPorcelainWhite() {
 		color = "Porcelain White";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -200,7 +201,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestProductIDForWalnutBrown() {
 		color = "Walnut Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -212,7 +213,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataImageForWalnutBrown() {
 		color = "Walnut Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualDataImage = anchorContainer.getAttribute("data-image");
@@ -224,7 +225,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataZoomImageForWalnutBrown() {
 		color = "Walnut Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualZoomDataImage = anchorContainer.getAttribute("data-zoom-image");
@@ -236,7 +237,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestNotifyForWalnutBrown() {
 		color = "Walnut Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -257,7 +258,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestTitleForWalnutBrown() {
 		color = "Walnut Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -277,7 +278,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMRPForWalnutBrown() {
 		color = "Walnut Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -321,7 +322,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMOPForWalnutBrown() {
 		color = "Walnut Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -371,7 +372,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestProductIDForElectricBlue() {
 		color = "Electric Blue";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -383,7 +384,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataImageForElectricBlue() {
 		color = "Electric Blue";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualDataImage = anchorContainer.getAttribute("data-image");
@@ -395,7 +396,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataZoomImageForElectricBlue() {
 		color = "Electric Blue";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualZoomDataImage = anchorContainer.getAttribute("data-zoom-image");
@@ -407,7 +408,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestNotifyForElectricBlue() {
 		color = "Electric Blue";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -428,7 +429,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestTitleForElectricBlue() {
 		color = "Electric Blue";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -448,7 +449,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMRPForElectricBlue() {
 		color = "Electric Blue";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -492,7 +493,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMOPForElectricBlue() {
 		color = "Electric Blue";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -541,7 +542,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestProductIDForCamouflageGreen() {
 		color = "Camouflage Green";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -553,7 +554,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataImageForCamouflageGreen() {
 		color = "Camouflage Green";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualDataImage = anchorContainer.getAttribute("data-image");
@@ -565,7 +566,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataZoomImageForCamouflageGreen() {
 		color = "Camouflage Green";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualZoomDataImage = anchorContainer.getAttribute("data-zoom-image");
@@ -577,7 +578,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestNotifyForCamouflageGreen() {
 		color = "Camouflage Green";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -598,7 +599,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestTitleForCamouflageGreen() {
 		color = "Camouflage Green";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -618,7 +619,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMRPForCamouflageGreen() {
 		color = "Camouflage Green";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -662,7 +663,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMOPForCamouflageGreen() {
 		color = "Camouflage Green";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -712,7 +713,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestProductIDForCherrywoodRed() {
 		color = "Cherrywood Red";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -724,7 +725,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataImageForCherrywoodRed() {
 		color = "Cherrywood Red";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualDataImage = anchorContainer.getAttribute("data-image");
@@ -736,7 +737,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataZoomImageForCherrywoodRed() {
 		color = "Cherrywood Red";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualZoomDataImage = anchorContainer.getAttribute("data-zoom-image");
@@ -748,7 +749,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestNotifyForCherrywoodRed() {
 		color = "Cherrywood Red";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -769,7 +770,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestTitleForCherrywoodRed() {
 		color = "Cherrywood Red";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -789,7 +790,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMRPForCherrywoodRed() {
 		color = "Cherrywood Red";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -833,7 +834,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMOPForCherrywoodRed() {
 		color = "Cherrywood Red";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -882,7 +883,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestProductIDForOakwoodBrown() {
 		color = "Oakwood Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -894,7 +895,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataImageForOakwoodBrown() {
 		color = "Oakwood Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualDataImage = anchorContainer.getAttribute("data-image");
@@ -906,7 +907,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataZoomImageForOakwoodBrown() {
 		color = "Oakwood Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualZoomDataImage = anchorContainer.getAttribute("data-zoom-image");
@@ -918,7 +919,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestNotifyForOakwoodBrown() {
 		color = "Oakwood Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -939,7 +940,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestTitleForOakwoodBrown() {
 		color = "Oakwood Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -959,7 +960,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMRPForOakwoodBrown() {
 		color = "Oakwood Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -1003,7 +1004,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMOPForOakwoodBrown() {
 		color = "Oakwood Brown";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -1053,7 +1054,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestProductIDForCharcoalGrey() {
 		color = "Charcoal Grey";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -1065,7 +1066,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataImageForCharcoalGrey() {
 		color = "Charcoal Grey";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualDataImage = anchorContainer.getAttribute("data-image");
@@ -1077,7 +1078,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestDataZoomImageForCharcoalGrey() {
 		color = "Charcoal Grey";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		String actualZoomDataImage = anchorContainer.getAttribute("data-zoom-image");
@@ -1089,7 +1090,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestNotifyForCharcoalGrey() {
 		color = "Charcoal Grey";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement productIdContainer = colorSelectorContainer.findElement(By.xpath("./input[1]"));
 		String actualProductId = productIdContainer.getAttribute("id");
@@ -1110,7 +1111,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestTitleForCharcoalGrey() {
 		color = "Charcoal Grey";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -1130,7 +1131,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMRPForCharcoalGrey() {
 		color = "Charcoal Grey";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();
@@ -1174,7 +1175,7 @@ public class CarvaanHindi {
 	@Test
 	public void TestMOPForCharcoalGrey() {
 		color = "Charcoal Grey";
-		CarvaanExpectedDataRecord record = CEV.getRecordByColor(color);
+		CarvaanExpectedDataRecord record = CEV.getRecordByColor(ProductName, color);
 		WebElement colorSelectorContainer = getListItemForSelectedColor(color);
 		WebElement anchorContainer = colorSelectorContainer.findElement(By.xpath("./a[1]"));
 		anchorContainer.click();

@@ -50,7 +50,7 @@ public class CarvaanExpectedValues {
 	
 	public List<CarvaanExpectedDataRecord> getAllRecords() { return records; }
 	
-	public CarvaanExpectedDataRecord getRecordByColor(String ProductColor)
+	public CarvaanExpectedDataRecord getRecordByColor(String Product, String ProductColor)
 	{
 		for (int i=0; i<records.size(); i++) {
 			try {
@@ -63,10 +63,10 @@ public class CarvaanExpectedValues {
 		return null;
 	}
 	
-	public String getProdutTitleByColor(String ProductColor) {
+	public String getProductTitleByColor(String Product, String ProductColor) {
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i).getTitle();
 			} catch (Exception ex) {
 				continue;
@@ -75,10 +75,10 @@ public class CarvaanExpectedValues {
 		return null;
 	}
 
-	public String getProdutColorByColor(String ProductColor) {
+	public String getProductColorByColor(String Product, String ProductColor) {
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i).getColor();
 			} catch (Exception ex) {
 				continue;
@@ -87,10 +87,10 @@ public class CarvaanExpectedValues {
 		return null;
 	}
 
-	public String getProdutMRPByColor(String ProductColor) {
+	public String getProductMRPByColor(String Product, String ProductColor) {
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i).getMRP();
 			} catch (Exception ex) {
 				continue;
@@ -99,10 +99,10 @@ public class CarvaanExpectedValues {
 		return null;
 	}
 
-	public String getProdutMOPByColor(String ProductColor) {
+	public String getProductMOPByColor(String Product, String ProductColor) {
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i).getMOP();
 			} catch (Exception ex) {
 				continue;
@@ -111,10 +111,10 @@ public class CarvaanExpectedValues {
 		return null;
 	}
 
-	public boolean getProdutNotifyByColor(String ProductColor) {
+	public boolean getProductNotifyByColor(String Product, String ProductColor) {
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i).getNotify();
 			} catch (Exception ex) {
 				continue;
@@ -123,10 +123,10 @@ public class CarvaanExpectedValues {
 		return false;
 	}
 
-	public String getProdutIDByColor(String ProductColor) {
+	public String getProductIDByColor(String Product, String ProductColor) {
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i).getID();
 			} catch (Exception ex) {
 				continue;
@@ -135,10 +135,10 @@ public class CarvaanExpectedValues {
 		return null;
 	}
 
-	public String getProdutImageByColor(String ProductColor) {
+	public String getProductImageByColor(String Product, String ProductColor) {
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i).getImage();
 			} catch (Exception ex) {
 				continue;
@@ -147,10 +147,10 @@ public class CarvaanExpectedValues {
 		return null;
 	}
 
-	public String getProdutZoomImageByColor(String ProductColor) {
+	public String getProductZoomImageByColor(String Product, String ProductColor) {
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i).getZoomImage();
 			} catch (Exception ex) {
 				continue;
