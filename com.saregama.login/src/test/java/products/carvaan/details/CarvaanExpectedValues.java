@@ -54,7 +54,7 @@ public class CarvaanExpectedValues {
 	{
 		for (int i=0; i<records.size(); i++) {
 			try {
-				if (records.get(i).getColor().equals(ProductColor))
+				if (records.get(i).getProduct().equals(Product) && records.get(i).getColor().equals(ProductColor))
 					return records.get(i);
 			} catch (Exception ex) {
 				continue;
