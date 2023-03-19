@@ -132,7 +132,7 @@ public class CarvaanHindi {
 		}
 		
 		String expectedMrp =  "6490";
-		//WriteLine("Product MRP: ", actualMrp);
+		WriteLine("Product MRP: ", actualMrp);
 		assertEquals(actualMrp, expectedMrp);
 	}
 
